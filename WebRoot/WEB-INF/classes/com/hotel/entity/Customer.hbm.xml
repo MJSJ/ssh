@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                                   "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.hotel.entity">
+	<class name="Customer" table="tb_customer"><!-- 每个class对应一个持久化对象 -->
+		<id name="id" type="long"><!-- id元素用来定义主键标识,并指定主键生成策略 -->
+			<generator class="native" />
+		</id>
+	
+		<property name="name"></property>
+		<property name="phone"></property>
+		<property name="password"></property>
+		<property name="IDCard"></property>
+		<property name="type"></property>
+		<property name="birthday"></property>
+
+	</class>	
+</hibernate-mapping>

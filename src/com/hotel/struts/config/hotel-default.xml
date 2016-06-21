@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.1.7//EN"
+	"http://struts.apache.org/dtds/struts-2.1.7.dtd">
+	<!-- http://...../../hello -->
+	<struts>
+		<package name="default" extends="json-default" namespace="/default">
+			<global-results>
+				<result name="notLogin" type="json">
+					<param name="ignoreHierarchy">false</param>
+					<param name="root">result</param>
+				</result>
+			</global-results>
+		</package>
+	</struts>

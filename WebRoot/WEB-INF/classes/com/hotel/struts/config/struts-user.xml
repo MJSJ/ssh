@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.1.7//EN"
+	"http://struts.apache.org/dtds/struts-2.1.7.dtd">
+	<!-- http://...../../hello -->
+	<struts>
+
+		<package name="user" extends="struts-default,json-default" namespace="/user">
+			<action name="ajax_login" class="ajaxAction" method="login">
+				<result name="login" type="json">
+					<param name="ignoreHierarchy">false</param>
+            		<param name="root">result</param>
+				</result>
+			</action>
+			
+			<action name="ajax_exit" class="ajaxAction" method="exit">
+				<result name="exit" type="json">
+					<param name="ignoreHierarchy">false</param>
+            		<param name="root">result</param>
+				</result>
+			</action>
+			
+			<action name="findCustomers" class="userAction" method="findCustomers">
+				<result name="findCustomers" type="json">
+					<param name="ignoreHierarchy">false</param>
+            		<param name="root">customers</param>
+            		
+				</result>
+			</action>
+			
+			<action name="regist" class="userAction" method="regist">
+				<result name="success" type="json">
+					<param name="ignoreHierarchy">false</param>
+            		<param name="root">result</param>
+				</result>
+			</action>
+			
+			<action name="login" class="userAction" method="login">
+				<result name="success">/index.jsp</result>
+			</action>
+			
+			<action name="toChangePhone" class="userAction" method="toChangePhone">
+				<result name="toChangePhone" type="json">
+					<param name="ignoreHierarchy">false</param>
+            		<param name="root">result</param>
+				</result>
+			</action>
+			
+			<action name="changePhone" class="userAction" method="changePhone">
+				<result name="changePhone" type="json">
+					<param name="ignoreHierarchy">false</param>
+            		<param name="root">result</param>
+				</result>
+			</action>
+			
+			<action name="changePassword" class="userAction" method="changePassword">
+				<result name="changePassword" type="json">
+					<param name="ignoreHierarchy">false</param>
+            		<param name="root">result</param>
+				</result>
+			</action>
+			
+			<action name="testAction" class="testAction">
+				<result name="success">/index.jsp</result>
+			</action>
+		</package>
+	</struts>

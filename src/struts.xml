@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.1.7//EN"
+	"http://struts.apache.org/dtds/struts-2.1.7.dtd">
+	<!-- http://...../../hello -->
+	<struts>
+	<!--
+		<include file="com/hotel/struts/config/hotel-default.xml"></include>
+		<include file="com/hotel/struts/config/struts-user.xml"></include>  -->
+		<package name="user" extends="struts-default,json-default" namespace="/user">
+			<action name="ajax_login" class="ajaxAction" method="login">
+				<result name="login" type="json">
+					<param name="ignoreHierarchy">false</param>
+            		<param name="root">result</param>
+				</result>
+			</action>
+		</package>
+	</struts>
