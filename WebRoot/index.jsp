@@ -342,12 +342,12 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		         
 			        <div class="input-group input-group-lg" style="margin-bottom:30px">
 					  <span class="input-group-addon" id="sizing-addon1">@</span>
-					  <input type="text" name="customer.name" class="form-control" placeholder="Username" aria-describedby="sizing-addon1">
+					  <input type="text" name="customer.phone" class="form-control" placeholder="Username" aria-describedby="sizing-addon1">
 					</div>
 					
 		         	<div class="input-group input-group-lg">
 					  <span class="input-group-addon" id="sizing-addon1">@</span>
-					  <input type="password" name="customer.password" class="form-control" placeholder="Username" aria-describedby="sizing-addon1">
+					  <input type="password" name="customer.password" class="form-control" placeholder="password" aria-describedby="sizing-addon1">
 					</div>
 		         </form>
 		      </div>
