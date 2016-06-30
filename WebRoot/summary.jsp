@@ -15,19 +15,17 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     <meta name="description" content="">
     <meta name="author" content="">
 
-   	 	<!-- 新 Bootstrap 核心 CSS 文件 
+   	 	<!-- 新 Bootstrap 核心 CSS 文件 -->
 	<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
-	-->
-	<link rel="stylesheet" href="./bootstrap.min.css">
+
+	<!--<link rel="stylesheet" href="./bootstrap.min.css">	-->
 	<link rel="stylesheet" href="./main.css">
 	<!-- 可选的Bootstrap主题文件（一般不用引入） 
 	<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">-->
 	<title>奇迹的</title>
 	
 	<style>
-		.col-md-6>img{
-			width:100%;
-		}
+	
 		
 	</style>
 	
@@ -97,8 +95,9 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6">
+				
 					<a href="#" class="thumbnail">
-						<img class="img-rounded" src="http://news.sohu.com/upload/yursile/mykrystal/img/09.jpeg" alt="">
+						<img class="img-rounded img-responsive" src="http://news.sohu.com/upload/yursile/mykrystal/img/09.jpeg" alt="">
 					</a>
 				</div>
 				<div class="col-md-6">
@@ -108,7 +107,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				</div>
 				<div class="col-md-6">
 					<a href="#" class="thumbnail">
-						<img class="img-rounded" src="http://news.sohu.com/upload/yursile/mykrystal/img/09.jpeg" alt="">
+						<img class="img-rounded img-responsive" src="http://news.sohu.com/upload/yursile/mykrystal/img/09.jpeg" alt="">
 					</a>
 				</div>
 				<div class="col-md-6">
@@ -167,11 +166,103 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		    </li>
 		  </ul>
 		</nav>
+		</div>
 		
-	
-	
+		<div class="container">
+			<div class="row">
+  <div class="col-xs-2">
+    <input type="text" class="form-control" placeholder=".col-xs-2">
+  </div>
+  <div class="col-xs-3">
+    <input type="text" class="form-control" placeholder=".col-xs-3">
+  </div>
+  <div class="col-xs-4">
+    <input type="text" class="form-control" placeholder=".col-xs-4">
+  </div>
+</div>
 		
 		</div>
+		
+	<div class="form-group has-success  has-feedback">
+ 		 <label class="control-label" for="inputSuccess1">Input with success</label>
+ 		 
+ 		 <div class="input-group">
+   	 	<span class="input-group-addon">@</span>
+ 		<input type="text" class="form-control" id="inputSuccess1">
+   		<span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+   </div>
+</div>
+<div class="form-group has-warning">
+  <label class="control-label" for="inputWarning1">Input with warning</label>
+  <input type="text" class="form-control" id="inputWarning1">
+</div>
+<div class="form-group has-error">
+  <label class="control-label" for="inputError1">Input with error</label>
+  <input type="text" class="form-control" id="inputError1">
+</div>
+<div class="has-success ">
+  <div class="checkbox">
+    <label>
+      <input type="checkbox" id="checkboxSuccess" value="option1">
+      Checkbox with success
+    </label>
+  </div>
+</div>
+<div class="has-warning">
+  <div class="checkbox">
+    <label>
+      <input type="checkbox" id="checkboxWarning" value="option1">
+      Checkbox with warning
+    </label>
+  </div>
+</div>
+<div class="has-error">
+  <div class="checkbox">
+    <label>
+      <input type="checkbox" id="checkboxError" value="option1">
+      Checkbox with error
+    </label>
+  </div>
+</div>
+	
+	
+		
+		<div class="container">
+		<button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		<form class="form-horizontal">
+  <div class="form-group">
+    <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+    <div class="col-sm-10">
+      <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+    <div class="col-sm-10">
+      <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <div class="checkbox">
+        <label>
+          <input type="checkbox"> Remember me
+        </label>
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <button type="submit" class="btn btn-default">Sign in</button>
+    </div>
+  </div>
+</form>
+
+</div>
+
+
+		
+		
 		<footer id="footer">
 			<div class="container">
 				<div class="row">
