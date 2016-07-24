@@ -368,6 +368,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<script src="./hammer.jquery.js"></script>
 	<script src="./index.js"></script>
 	<h1>yf branch</h1>
-	<h2>kf branch</h1>
+	<h2>kf branch</h2>
 	</body>
 </html>
